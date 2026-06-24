@@ -1,0 +1,21 @@
+chest_pain(Integer cp)
+
+resting_blood_pressure(Integer trestbps)
+
+serum_cholestoral(Integer chol)
+
+fasting_blood_sugar(Integer fbs)
+
+resting_electrocardiographic_results(Integer restecg)
+
+heart_rate_achieved(Integer thalach)
+
+exercise_induced_angina(Integer exang)
+
+ST_depression_induced_by_exercise(Integer oldpeak)
+
+slope_of_the_peak_exercise(Integer slope)
+
+number_of_major_vessels(Integer ca)
+
+thal(Integer thal)
