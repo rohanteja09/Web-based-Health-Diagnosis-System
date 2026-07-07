@@ -13,13 +13,15 @@ try {
 
     String user = "REDACTED";
 
-    String password = "REDACTED";
+    String password = "YOUR_ACTUAL_PASSWORD";
 
     con = DriverManager.getConnection(url, user, password);
 
-}
-catch(Exception e)
-{
-    out.println(e);
+    out.println("<h3 style='color:green'>Database Connected Successfully</h3>");
+
+} catch (Exception e) {
+
+    e.printStackTrace(new java.io.PrintWriter(out));
+
 }
 %>
