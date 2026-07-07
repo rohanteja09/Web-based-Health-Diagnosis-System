@@ -3,12 +3,18 @@
 <%
 Connection con = null;
 
-Class.forName("com.mysql.cj.jdbc.Driver");
+try {
+    Class.forName("com.mysql.cj.jdbc.Driver");
 
-String url = "jdbc:mysql://gateway01.ap-southeast-1.prod.alibaba.tidbcloud.com:4000/disease_prediction?sslMode=VERIFY_IDENTITY";
+    String url = "REDACTED?sslMode=REQUIRED";
 
-String user = "REDACTED";
-String password = "YOUR_GENERATED_PASSWORD";
+    String user = "REDACTED";
 
-con = DriverManager.getConnection(url, user, password);
+    String password = "YOUR_GENERATED_PASSWORD";
+
+    con = DriverManager.getConnection(url, user, password);
+
+} catch (Exception e) {
+    out.println(e);
+}
 %>
