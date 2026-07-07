@@ -13,7 +13,7 @@ try {
 
     String user = "REDACTED";
 
-    String password = "YOUR_TIDB_PASSWORD";
+    String password = "REDACTED";
 
     con = DriverManager.getConnection(url, user, password);
 
