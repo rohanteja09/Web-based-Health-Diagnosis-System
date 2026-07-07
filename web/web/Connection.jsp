@@ -1,14 +1,15 @@
-<%@page import="java.sql.*"%>
+<%@ page import="java.sql.*" %>
+
 <%
-    Connection con = null;
-    PreparedStatement query = null;
-    ResultSet rs = null;
+Connection con = null;
 
-    Class.forName("com.mysql.cj.jdbc.Driver");
+Class.forName("com.mysql.cj.jdbc.Driver");
 
-    con = DriverManager.getConnection(
-        "jdbc:mysql://localhost:3306/disease_prediction?useSSL=false&serverTimezone=UTC",
-        "root",
-        "Murali@123"
-    );
+String url =
+"jdbc:mysql://gateway01.ap-southeast-1.prod.alibaba.tidbcloud.com:4000/disease_prediction?sslMode=VERIFY_IDENTITY";
+
+String user = "YOUR_USERNAME";
+String password = "YOUR_PASSWORD";
+
+con = DriverManager.getConnection(url, user, password);
 %>
