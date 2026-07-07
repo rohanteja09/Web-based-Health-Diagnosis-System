@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Datasets</servlet-name>
+        <servlet-class>pro.Datasets</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Diagnos_Dataset</servlet-name>
+        <servlet-class>pro.Diagnos_Dataset</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Admin_Action</servlet-name>
+        <servlet-class>pro.Admin_Action</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>User_Action</servlet-name>
+        <servlet-class>pro.User_Action</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Datasets</servlet-name>
+        <url-pattern>/Datasets</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Diagnos_Dataset</servlet-name>
+        <url-pattern>/Diagnos_Dataset</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Admin_Action</servlet-name>
+        <url-pattern>/Admin_Action</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>User_Action</servlet-name>
+        <url-pattern>/User_Action</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
