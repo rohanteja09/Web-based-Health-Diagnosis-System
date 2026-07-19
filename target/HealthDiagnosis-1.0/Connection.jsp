@@ -9,11 +9,11 @@ try {
 
     Class.forName("com.mysql.cj.jdbc.Driver");
 
-    String url = "REDACTED?sslMode=REQUIRED";
+    String url = System.getenv("DB_URL");
 
-    String user = "REDACTED";
+    String user = System.getenv("DB_USER");
 
-    String password = "REDACTED";
+    String password = System.getenv("DB_PASSWORD");
 
     con = DriverManager.getConnection(url, user, password);
 
